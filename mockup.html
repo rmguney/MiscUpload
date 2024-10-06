@@ -1,0 +1,142 @@
+<!-- 
+Boğaziçi University
+SWE 530: Software Design Process
+Project 01 - Basic Design from Requirements
+R. Melih GÜNEY
+Due Date:
+20 October 2024 @23:59
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Messaging App Mockup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, rgb(0, 0, 0), rgb(42, 42, 42));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-pink-100 to-blue-100 text-gray-900">
+
+<h2 class="text-4xl text-center font-bold m-4 gradient-text">
+    Welcome Birkan!
+</h2>
+
+<div class="container mx-auto px-4 py-8">
+    <div class="flex">
+        <div class="w-1/4 bg-white p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4 gradient-text">Channels</h2>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-blue-500 font-semibold hover:underline"># Main</a></li>
+                <li><a href="#" class="text-blue-500 font-semibold hover:underline"># Project-Discussion</a></li>
+                <li><a href="#" class="text-blue-500 font-semibold hover:underline"># DevOps</a></li>
+                <li><a href="#" class="text-blue-500 font-semibold hover:underline"># Task-Management</a></li>
+                <li><a href="#" class="text-blue-500 font-semibold hover:underline"># General</a></li>
+            </ul>
+            <h2 class="text-2xl font-bold mb-4 pt-4 gradient-text">Private Chats</h2>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg w-full">+ Start a Private Chat</button>
+            <ul class="space-y-2 pt-4">
+                <li><a href="#" class="text-blue-500 font-semibold hover:underline">o R. Melih Güney</a></li>
+            </ul>
+        </div>
+
+        <div class="w-3/4 ml-4">
+            <div class="bg-white p-4 rounded-lg shadow-lg mb-4">
+                <h2 class="text-2xl font-bold gradient-text"># Main</h2>
+                <p class="text-gray-600">Team announcements and general discussion.</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg h-96 overflow-y-scroll">
+                <div class="mb-4">
+                    <p class="font-semibold text-blue-500">Leyla Aydın <span class="text-gray-600 text-sm">2:50 PM</span><span class="text-xs text-gray-500 ml-2">Seen by 4</span></p>
+                    <p class="text-gray-900">Here’s the image from the last presentation:</p>
+                    <img src="https://via.placeholder.com/150" alt="Sample Image" class="mt-2 rounded-lg">
+                </div>
+
+                <div class="mb-4">
+                    <p class="font-semibold text-blue-500">Elif Demir <span class="text-gray-600 text-sm">2:35 PM</span><span class="text-xs text-gray-500 ml-2">Seen by 5</span></p>
+                    <p class="text-gray-900">Thanks Leyla! I'll add it to the documentation.</p>
+                </div>
+
+                <div class="mb-4">
+                    <p class="font-semibold text-blue-500">Murat Kaya <span class="text-gray-600 text-sm">3:00 PM</span><span class="text-xs text-gray-500 ml-2">Seen by 2</span></p>
+                    <p class="text-gray-900">Please change the background music of our next presentation to this:</p>
+                    <audio controls class="mt-2 w-full">
+                        <source src="" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="flex mt-4">
+                <input type="text" class="flex-grow p-2 border rounded-lg" placeholder="Type a message or drag and drop a file...">
+                <button class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <h3 class="font-semibold text-lg mb-2">Task List</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between items-center">
+                        <span>Prepare the requirements</span>
+                        <div>
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-yellow-500 rounded-lg">In Progress</span>
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-gray-500 rounded-lg">Edit</span>
+                        </div>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>Draw a use case diagram</span>
+                        <div>
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-green-500 rounded-lg">Completed</span>
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-gray-500 rounded-lg">Edit</span>
+                        </div>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span>Design a mockup screen</span>
+                        <div>
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-red-500 rounded-lg">Stuck</span>
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-gray-500 rounded-lg">Edit</span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg w-full mt-4">Create New</button>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <h3 class="font-semibold text-lg mb-2">Assign Tasks</h3>
+                <select class="w-full p-2 border rounded-lg mb-2">
+                    <option>Select User</option>
+                    <option>R. Melih Güney</option>
+                    <option>Elif Demir</option>
+                    <option>H. Birkan Yılmaz</option>
+                    <option>Leyla Aydın</option>
+                    <option>Murat Kaya</option>
+                </select>
+                <select class="w-full p-2 border rounded-lg mb-2">
+                    <option>Select Task</option>
+                    <option>Prepare the requirements</option>
+                    <option>Draw a use case diagram</option>
+                    <option>Design a mockup screen</option>
+                </select>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg w-full">Assign</button>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <h3 class="font-semibold text-lg mb-2">Admin Actions</h3>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-lg w-full mb-2">Create a New Channel</button>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-lg w-full mb-2">Manage Users</button>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-lg w-full">Generate and Send Invite Link</button>
+            </div>
+        </div>
+    </div>
+</div>
