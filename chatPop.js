@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speech Bubble</title>
-</head>
-<body>
-    <script>window.supsis=window.supsis||function(){(supsis.q=supsis.q||[]).push(arguments)};supsis.l=+new Date;</script>
-    <script src="https://b2cargotest.visitor.supsis.live/static/js/loader.js" type="text/javascript" async defer></script>
-    <script>
         const speechBubble = document.createElement('div');
         speechBubble.classList.add('speech-bubble');
         speechBubble.textContent = 'Merhaba ben akıllı asistanınız Omnia! Hızlı teslimat sorgulaması yapmanıza yardımcı olabilirim!';
@@ -72,6 +61,3 @@
         };
     
         speechBubble.innerHTML = wrapLetters(speechBubble.textContent);
-    </script>
-    
-</html>
